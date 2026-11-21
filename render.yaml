@@ -1,0 +1,21 @@
+# Render.com blueprint for the TailAdmin (NiceGUI) app.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: tailadmin-nicegui
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: STORAGE_SECRET
+        generateValue: true
+    disk:
+      # Persist the SQLite database across deploys/restarts.
+      name: tailadmin-data
+      mountPath: /app/data
+      sizeGB: 1

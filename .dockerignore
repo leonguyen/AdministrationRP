@@ -1,0 +1,13 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.db
+.web
+.states
+.pytest_cache
+node_modules
+assets/external
+README.md
+render.yaml

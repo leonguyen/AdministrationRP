@@ -1,0 +1,18 @@
+[project]
+name = "tailadmin-nicegui"
+version = "1.0.0"
+description = "TailAdmin (AdministrationRP) rebuilt with NiceGUI + SQLite"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "nicegui>=2.10.0",
+    "sqlalchemy>=2.0.0",
+    "argon2-cffi>=23.1.0",
+    "PyYAML>=6.0",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
