@@ -1,0 +1,8 @@
+
+reflex[db]==0.10.0
+xy[reflex]==0.0.9
+reflex-enterprise>=0.9.7
+playwright
+psycopg[binary]>=3.1.8
+argon2-cffi
+PyYAML
